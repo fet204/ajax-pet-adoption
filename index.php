@@ -43,6 +43,15 @@
 <p><a href="index.php">RESET</a></p>
 <script>
     $("document").ready(function(){
+
+      //hide likes and eats
+      $('#pet_likes').hide();
+      $('#pet_eats').hide();
+
+
+      $('#pet_feels').click(function(e){
+        $('#pet_likes').slideDown(200);
+      });
         
         
         $('#myForm').submit(function(e){
